@@ -14,7 +14,7 @@ This section explains how to setup a development enviroment for this project
 ## Virtual environment
 1. Clone repository: `git clone git@github.com:Group-13-Bachelor/DungeonCrawler.git dungeonCrawler`
 2. Enter the repository: `cd dungeonCrawler`
-3. Create virutal environment: `python venv ./.venv`
+3. Create virutal environment: `python -m venv ./.venv`
 4. Activate virutal environment:
     - Windows: `.venv\Scripts\activate.bat`
     - Linux: `source .venv/bin/activate`
