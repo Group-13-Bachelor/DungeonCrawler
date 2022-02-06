@@ -2,6 +2,7 @@ from package_1 import main
 
 import unittest
 
+
 class TestSuite(unittest.TestCase):
     """Sample test cases"""
 
@@ -10,4 +11,4 @@ class TestSuite(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main() # This allows for infile testing with pytest
+    unittest.main()     # This allows for infile testing with pytest
