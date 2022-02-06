@@ -1,6 +1,8 @@
 # DungeonCrawler
 Dungeon crawler scenario in our bachelor project
 
+![Tests](https://github.com/Group-13-Bachelor/DungeonCrawler/actions/workflows/python-app.yml/badge.svg)
+
 # Testing
 Main branch is automaticly tested when updated
 Other branches are tested if they have a pull request towards the main branch
