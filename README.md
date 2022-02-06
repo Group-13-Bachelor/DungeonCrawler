@@ -14,7 +14,7 @@ This section explains how to setup a development enviroment for this project
 
 ## Install package
 1. Stand in project root directory: `cd <path to directory>/dungeonCrawler/`
-2. Install project packages: 'pip install -e .'
+2. Install project packages: `pip install -e .`
     - This also installs packages in `requirements.txt`
 3. Install developer tools: `pip install -r .\requirements_dev.txt`
 
