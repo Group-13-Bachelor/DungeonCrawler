@@ -1,4 +1,4 @@
-from package_1 import main
+from game import main
 
 import unittest
 
