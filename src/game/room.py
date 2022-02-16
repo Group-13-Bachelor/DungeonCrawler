@@ -6,8 +6,12 @@ from game.avatar import Avatar
 class Room:
     entities = list()
     item: Item
+    x_pos: int
+    y_pos: int
 
-    def __init__(self, item: Item = None):
+    def __init__(self, x_pos, y_pos, item: Item = None):
+        self.x_pos = x_pos
+        self.y_pos = y_pos
         self.item = item
 
     def add_entity(self, entity: Entity):
@@ -20,7 +24,7 @@ class Room:
         avatar.inventory.add_item(self.item)
 
     def __str__(self):
-        return 'Room'
+        return '[--]'
 
 
 if __name__ == "__main__":
