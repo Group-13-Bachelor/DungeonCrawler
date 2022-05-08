@@ -33,10 +33,11 @@ class Entity:
 
     def __str__(self) -> str:
         return f"""
-        Health: {self.health}, \n
-        Attack: {self.attack}, \n
-        Defence: {self.defence}, \n
-        Luck: {self.luck}, \n
+        Name: {self.name},
+        Health: {self.health},
+        Attack: {self.attack},
+        Defence: {self.defence},
+        Luck: {self.luck},
         """
 
     def __repr__(self) -> str:

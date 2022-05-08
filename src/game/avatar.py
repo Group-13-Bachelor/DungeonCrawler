@@ -42,7 +42,7 @@ class Avatar(Entity):
         return super().__repr__()
 
     def __str__(self):
-        return super().__str__() + f"{self.inventory.inventory}"
+        return super().__str__() + f"Inventory: {self.inventory.inventory}\n"
 
 
 class Inventory:
