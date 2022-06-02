@@ -1,4 +1,9 @@
 from game import avatar
+from game import dungeon
+
+
+_dungeon = None
+_jordan = avatar.Avatar("Jordan", 100, 10, 10, 3, [])
 
 def read():
     return input("Input:\t").lower()
@@ -40,6 +45,12 @@ def main():
             print(main_menu(i) + ext)
         if state == "Game":
             print(game_menu(i) + ext)
+        if i == '4':
+            if state == "Menu":
+                state = "Game"
+            else:
+                state = "Menu"
+
         i = read()
 
 
@@ -48,7 +59,7 @@ def scan():
 
 
 def display_avatar():
-    print(avatar.Avatar("Jordan", 100, 10, 10, 3, []))
+    print(_jordan)
 
 
 def display_players():
@@ -56,8 +67,10 @@ def display_players():
 
 
 def join_dungeon():
-    pass
-
+    if _dungeon == None:
+        _dungeon = dungeon.Dungeon()
+    else:
+        _dungeon.spawn_entity(_jordan)
 
 def fight():
     print("Fight!\n")
